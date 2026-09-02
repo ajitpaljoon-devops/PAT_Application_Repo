@@ -1,7 +1,7 @@
 
 
 resource "azurerm_network_interface" "nic" {
-    for_each = var.nics
+  for_each = var.nics
   name                = each.value.nic_name
   location            = each.value.location
   resource_group_name = each.value.rg_name
