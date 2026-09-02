@@ -10,7 +10,7 @@ on:
     branches:
       - feature
       - main
-
+  workflow_dispatch:
 jobs:
   terraform:
     runs-on: ubuntu-latest
